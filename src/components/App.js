@@ -12,7 +12,7 @@ const App = (props) => {
     <p data-testid="text">{data[counter].text}</p>
     <button data-testid="button-next" disabled={counter === props.slides.length-1 ? true : false} onClick={() =>setCounter(counter+1)}>Next</button>
     <button data-testid="button-prev" disabled={counter === 0 ? true : false} onClick={() => setCounter(counter-1)}>Prev</button>
-    <button data-testid="button-restart" onClick={() =>setCounter(0)} disabled={counter === props.slides.length-1 ? true : false}>Restart</button>
+    <button data-testid="button-restart" onClick={() =>setCounter(0)} disabled={counter === 0 ? true : false}>Restart</button>
     </div>
   )
 }
